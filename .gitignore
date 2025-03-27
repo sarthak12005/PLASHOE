@@ -1,0 +1,15 @@
+# Logs
+logs/
+*.log
+
+# Editor settings (VS Code, JetBrains, etc.)
+.vscode/
+.idea/
+*.iml
+
+# Cache & Temporary files
+*.swp
+*.swo
+*.swn
+Thumbs.db
+.DS_Store

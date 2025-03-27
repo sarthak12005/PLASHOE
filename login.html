@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-Plashoe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="/home.html/os-essets/site-logo.svg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- jQuery (Required for Toastr) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</head>
+<body>
+    <!-- <header>
+        <div class="head">
+            <p>Free Express Shipping on all orders with all duties included</p>
+        </div>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" name="check" id="sidebar">
+                <label for="sidebar"><i class="fa-solid fa-bars" style="font-size: 24px;"></i></label>
+                <div class="side-nav-bar">
+                    <ul class="side-link">
+                        <label for="sidebar"><i class="fa-solid fa-xmark" style="font-size: 24px;"></i></label>
+                        <li><a href="Men.html">MEN</a></li>
+                        <li><a href="#">WOMEN</a></li>
+                        <li><a href="#">COLLECTION</a></li>
+                        <li><a href="#">LOOKBOOK</a></li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-first">
+                <div class="logo">
+                    <a href="/index.html"> <svg width="139" height="24" viewBox="0 0 139 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.208 21V4.2H9.288C10.28 4.2 11.168 4.44 11.952 4.92C12.752 5.384 13.384 6.024 13.848 6.84C14.328 7.64 14.568 8.544 14.568 9.552C14.568 10.592 14.328 11.528 13.848 12.36C13.384 13.176 12.752 13.832 11.952 14.328C11.168 14.808 10.28 15.048 9.288 15.048H5.664V21H2.208ZM5.64 11.904H8.928C9.52 11.904 10.016 11.688 10.416 11.256C10.832 10.808 11.04 10.256 11.04 9.6C11.04 8.944 10.832 8.408 10.416 7.992C10.016 7.56 9.52 7.344 8.928 7.344H5.64V11.904ZM21.8174 21V4.2H25.2734V17.856H32.9294V21H21.8174ZM38.3806 21L44.9566 4.2H48.0766L54.6286 21H51.0766L49.7086 17.376H43.1806L41.8126 21H38.3806ZM45.2686 11.856L44.2606 14.544H48.6526L47.6206 11.808C47.5246 11.568 47.4126 11.256 47.2846 10.872C47.1566 10.472 47.0126 10.048 46.8526 9.6C46.7086 9.152 46.5806 8.728 46.4686 8.328C46.2766 8.92 46.0766 9.528 45.8686 10.152C45.6606 10.776 45.4606 11.344 45.2686 11.856ZM66.507 21.24C64.955 21.24 63.619 20.96 62.499 20.4C61.395 19.824 60.451 19 59.667 17.928L61.851 15.456C62.635 16.544 63.411 17.288 64.179 17.688C64.947 18.072 65.795 18.264 66.723 18.264C67.475 18.264 68.107 18.104 68.619 17.784C69.147 17.464 69.411 17.032 69.411 16.488C69.411 15.832 69.075 15.32 68.403 14.952C67.747 14.568 66.899 14.272 65.859 14.064C64.051 13.68 62.707 13.064 61.827 12.216C60.947 11.368 60.507 10.24 60.507 8.832C60.507 7.856 60.787 7 61.347 6.264C61.907 5.512 62.643 4.928 63.555 4.512C64.483 4.096 65.507 3.888 66.627 3.888C68.115 3.888 69.347 4.144 70.323 4.656C71.315 5.152 72.099 5.864 72.675 6.792L70.443 8.976C69.451 7.568 68.187 6.864 66.651 6.864C65.851 6.864 65.203 7.032 64.707 7.368C64.227 7.688 63.987 8.128 63.987 8.688C63.987 9.28 64.267 9.744 64.827 10.08C65.403 10.416 66.171 10.68 67.131 10.872C68.891 11.24 70.283 11.832 71.307 12.648C72.347 13.448 72.867 14.528 72.867 15.888C72.867 17.008 72.595 17.968 72.051 18.768C71.523 19.568 70.779 20.184 69.819 20.616C68.875 21.032 67.771 21.24 66.507 21.24ZM80.2002 21V4.2H83.6562V11.04H90.8562V4.2H94.3122V21H90.8562V14.208H83.6562V21H80.2002ZM110.131 21.24C108.899 21.24 107.763 21.024 106.723 20.592C105.683 20.16 104.779 19.56 104.011 18.792C103.259 18.008 102.667 17.088 102.235 16.032C101.819 14.976 101.611 13.816 101.611 12.552C101.611 11.304 101.819 10.152 102.235 9.096C102.667 8.04 103.259 7.128 104.011 6.36C104.779 5.576 105.683 4.968 106.723 4.536C107.763 4.104 108.899 3.888 110.131 3.888C111.347 3.888 112.475 4.104 113.515 4.536C114.555 4.968 115.451 5.576 116.203 6.36C116.971 7.144 117.563 8.064 117.979 9.12C118.411 10.176 118.627 11.32 118.627 12.552C118.627 13.8 118.411 14.952 117.979 16.008C117.563 17.064 116.971 17.984 116.203 18.768C115.451 19.552 114.555 20.16 113.515 20.592C112.475 21.024 111.347 21.24 110.131 21.24ZM110.131 17.952C111.091 17.952 111.947 17.72 112.699 17.256C113.451 16.792 114.035 16.152 114.451 15.336C114.883 14.52 115.099 13.592 115.099 12.552C115.099 11.512 114.883 10.592 114.451 9.792C114.035 8.976 113.451 8.336 112.699 7.872C111.947 7.392 111.091 7.152 110.131 7.152C109.155 7.152 108.291 7.384 107.539 7.848C106.787 8.312 106.195 8.952 105.763 9.768C105.347 10.584 105.139 11.512 105.139 12.552C105.139 13.608 105.347 14.544 105.763 15.36C106.195 16.16 106.787 16.792 107.539 17.256C108.291 17.72 109.155 17.952 110.131 17.952ZM125.911 21V4.2H137.143V7.272H129.295V10.944H135.967V13.92H129.295V17.928H137.287V21H125.911Z"
+                                fill="#262B2C" />
+                        </svg></a>
+                </div>
+                <ul class="nav-link-1">
+                    <li><a href="Men.html">MEN</a></li>
+                    <li><a href="Women.html">WOMEN</a></li>
+                    <li><a href="collection.html" id="active-link">COLLECTION</a></li>
+                    <li><a href="/LookBook.html">LOOKBOOK</a></li>
+                    <li><a href="#">SALE</a></li>
+                </ul>
+            </div>
+            <div class="nav-second">
+                <ul class="nav-link-2">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <input type="checkbox" name="cart-check" id="cart-box">
+                    <label for="cart-box" class="cart-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="cart-count">
+                            <span id="C-Count">0</span>
+                        </div>
+                    </label>
+                    <div class="side-cart">
+                        <div class="cart-one">
+                            <h3>Shopping Cart</h3>
+                            <label for="cart-box">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                
+                            </label>
+                        </div>
+                        <div class="cart-two">
+                            <p id="Cart-note">No products in the cart.</p>
+                        </div>
+                        <div class="totalCart">
+                            <h2>Total : </h2>
+                            <p id="Cart-total"></p>
+                        </div>
+                        <div class="cart-three">
+                            <button>Continue Shopping</button>
+                        </div>
+                    </div>
+                    <a id="profile-btn"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>   -->
+    <main>
+        <div class="login-box-container">
+            <form class="form_container"  >
+                <div class="logo_container">
+                    <img src="/home.html/os-essets/S.jpg" alt="logo image">
+                </div>
+                <div class="title_container">
+                  <p class="title">Login to your Account</p>
+                  <span class="subtitle">Get started with our app, just create an account and enjoy the experience.</span>
+                </div>
+                <br>
+                <div class="input_container">
+                  <label class="input_label" for="email_field">Email</label>
+                  <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"></path>
+                    <path stroke-linejoin="round" stroke-width="1.5" stroke="#141B34" d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"></path>
+                  </svg>
+                  <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="text" class="input_field" id="email_field">
+                </div>
+                <div class="input_container">
+                  <label class="input_label" for="password_field">Password</label>
+                  <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                    <path stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M18 11.0041C17.4166 9.91704 16.273 9.15775 14.9519 9.0993C13.477 9.03404 11.9788 9 10.329 9C8.67911 9 7.18091 9.03404 5.70604 9.0993C3.95328 9.17685 2.51295 10.4881 2.27882 12.1618C2.12602 13.2541 2 14.3734 2 15.5134C2 16.6534 2.12602 17.7727 2.27882 18.865C2.51295 20.5387 3.95328 21.8499 5.70604 21.9275C6.42013 21.9591 7.26041 21.9834 8 22"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M6 9V6.5C6 4.01472 8.01472 2 10.5 2C12.9853 2 15 4.01472 15 6.5V9"></path>
+                    <path fill="#141B34" d="M21.2046 15.1045L20.6242 15.6956V15.6956L21.2046 15.1045ZM21.4196 16.4767C21.7461 16.7972 22.2706 16.7924 22.5911 16.466C22.9116 16.1395 22.9068 15.615 22.5804 15.2945L21.4196 16.4767ZM18.0228 15.1045L17.4424 14.5134V14.5134L18.0228 15.1045ZM18.2379 18.0387C18.5643 18.3593 19.0888 18.3545 19.4094 18.028C19.7299 17.7016 19.7251 17.1771 19.3987 16.8565L18.2379 18.0387ZM14.2603 20.7619C13.7039 21.3082 12.7957 21.3082 12.2394 20.7619L11.0786 21.9441C12.2794 23.1232 14.2202 23.1232 15.4211 21.9441L14.2603 20.7619ZM12.2394 20.7619C11.6914 20.2239 11.6914 19.358 12.2394 18.82L11.0786 17.6378C9.86927 18.8252 9.86927 20.7567 11.0786 21.9441L12.2394 20.7619ZM12.2394 18.82C12.7957 18.2737 13.7039 18.2737 14.2603 18.82L15.4211 17.6378C14.2202 16.4587 12.2794 16.4587 11.0786 17.6378L12.2394 18.82ZM14.2603 18.82C14.8082 19.358 14.8082 20.2239 14.2603 20.7619L15.4211 21.9441C16.6304 20.7567 16.6304 18.8252 15.4211 17.6378L14.2603 18.82ZM20.6242 15.6956L21.4196 16.4767L22.5804 15.2945L21.785 14.5134L20.6242 15.6956ZM15.4211 18.82L17.8078 16.4767L16.647 15.2944L14.2603 17.6377L15.4211 18.82ZM17.8078 16.4767L18.6032 15.6956L17.4424 14.5134L16.647 15.2945L17.8078 16.4767ZM16.647 16.4767L18.2379 18.0387L19.3987 16.8565L17.8078 15.2945L16.647 16.4767ZM21.785 14.5134C21.4266 14.1616 21.0998 13.8383 20.7993 13.6131C20.4791 13.3732 20.096 13.1716 19.6137 13.1716V14.8284C19.6145 14.8284 19.619 14.8273 19.6395 14.8357C19.6663 14.8466 19.7183 14.8735 19.806 14.9391C19.9969 15.0822 20.2326 15.3112 20.6242 15.6956L21.785 14.5134ZM18.6032 15.6956C18.9948 15.3112 19.2305 15.0822 19.4215 14.9391C19.5091 14.8735 19.5611 14.8466 19.5879 14.8357C19.6084 14.8273 19.6129 14.8284 19.6137 14.8284V13.1716C19.1314 13.1716 18.7483 13.3732 18.4281 13.6131C18.1276 13.8383 17.8008 14.1616 17.4424 14.5134L18.6032 15.6956Z"></path>
+                  </svg>
+                  <input placeholder="Password" title="Inpit title" name="input-name" type="password" class="input_field" id="password_field">
+                </div>
+                <button title="Sign In" type="button" class="sign-in_btn" onclick="submitData()">
+                  <span>Sign In</span>
+                </button>
+
+                <div class="new-account">
+                    <p>Don't have an account? <a href="signup.html">Register</a></p>
+                </div>
+              
+                <div class="separator">
+                  <hr class="line">
+                  <span>Or</span>
+                  <hr class="line">
+                </div>
+                
+                 <button title="Sign In" type="submit"  class="sign-in_ggl" >
+                
+                  <?xml version="1.0" ?><svg width="24" height="24" id="Capa_1" style="enable-background:new 0 0 150 150;" version="1.1" viewBox="0 0 150 150" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                    .st0{fill:#1A73E8;}
+                    .st1{fill:#EA4335;}
+                    .st2{fill:#4285F4;}
+                    .st3{fill:#FBBC04;}
+                    .st4{fill:#34A853;}
+                    .st5{fill:#4CAF50;}
+                    .st6{fill:#1E88E5;}
+                    .st7{fill:#E53935;}
+                    .st8{fill:#C62828;}
+                    .st9{fill:#FBC02D;}
+                    .st10{fill:#1565C0;}
+                    .st11{fill:#2E7D32;}
+                    .st12{fill:#F6B704;}
+                    .st13{fill:#E54335;}
+                    .st14{fill:#4280EF;}
+                    .st15{fill:#34A353;}
+                    .st16{clip-path:url(#SVGID_2_);}
+                    .st17{fill:#188038;}
+                    .st18{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+                    .st19{opacity:0.3;fill:#0D652D;enable-background:new    ;}
+                    .st20{clip-path:url(#SVGID_4_);}
+                    .st21{opacity:0.3;fill:url(#_45_shadow_1_);enable-background:new    ;}
+                    .st22{clip-path:url(#SVGID_6_);}
+                    .st23{fill:#FA7B17;}
+                    .st24{opacity:0.3;fill:#174EA6;enable-background:new    ;}
+                    .st25{opacity:0.3;fill:#A50E0E;enable-background:new    ;}
+                    .st26{opacity:0.3;fill:#E37400;enable-background:new    ;}
+                    .st27{fill:url(#Finish_mask_1_);}
+                    .st28{fill:#FFFFFF;}
+                    .st29{fill:#0C9D58;}
+                    .st30{opacity:0.2;fill:#004D40;enable-background:new    ;}
+                    .st31{opacity:0.2;fill:#3E2723;enable-background:new    ;}
+                    .st32{fill:#FFC107;}
+                    .st33{opacity:0.2;fill:#1A237E;enable-background:new    ;}
+                    .st34{opacity:0.2;}
+                    .st35{fill:#1A237E;}
+                    .st36{fill:url(#SVGID_7_);}
+                    .st37{fill:#FBBC05;}
+                    .st38{clip-path:url(#SVGID_9_);fill:#E53935;}
+                    .st39{clip-path:url(#SVGID_11_);fill:#FBC02D;}
+                    .st40{clip-path:url(#SVGID_13_);fill:#E53935;}
+                    .st41{clip-path:url(#SVGID_15_);fill:#FBC02D;}
+                  </style><g><path class="st14" d="M120,76.1c0-3.1-0.3-6.3-0.8-9.3H75.9v17.7h24.8c-1,5.7-4.3,10.7-9.2,13.9l14.8,11.5   C115,101.8,120,90,120,76.1L120,76.1z"/><path class="st15" d="M75.9,120.9c12.4,0,22.8-4.1,30.4-11.1L91.5,98.4c-4.1,2.8-9.4,4.4-15.6,4.4c-12,0-22.1-8.1-25.8-18.9   L34.9,95.6C42.7,111.1,58.5,120.9,75.9,120.9z"/><path class="st12" d="M50.1,83.8c-1.9-5.7-1.9-11.9,0-17.6L34.9,54.4c-6.5,13-6.5,28.3,0,41.2L50.1,83.8z"/><path class="st13" d="M75.9,47.3c6.5-0.1,12.9,2.4,17.6,6.9L106.6,41C98.3,33.2,87.3,29,75.9,29.1c-17.4,0-33.2,9.8-41,25.3   l15.2,11.8C53.8,55.3,63.9,47.3,75.9,47.3z"/></g></svg>
+                  <span>Sign In with Google</span>
+                </button>
+                <button title="Sign In" type="submit" class="sign-in_apl">
+                  <svg preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 256 315" height="20px" width="16px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path fill="#ffffff" d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"></path>
+                    </g>
+                  </svg>
+                  <span>Sign In with Apple</span>
+                </button>
+                <p class="note">Terms of use &amp; Conditions</p>
+              </form>
+       
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

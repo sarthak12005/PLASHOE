@@ -412,6 +412,11 @@ header nav .nav-second .nav-icon .side-cart .cart-three button{
     cursor: pointer;
 }
 
+header nav .nav-second .nav-icon .side-cart .cart-three button a {
+    color: white;
+    text-decoration: none;
+}
+
 header nav .nav-second .nav-icon .side-cart .cart-three button:hover{
     background-color: black;
 }

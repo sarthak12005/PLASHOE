@@ -384,6 +384,23 @@ main .one .one-title h2{
     line-height: 101px;
 }
 
+@media (max-width: 600px) {
+    main .one {
+        padding: 0px 20px;
+    }
+
+    main .one .one-title {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    main .one .one-title h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+}
+
+
 main .two{
     width: 100%;
     
@@ -486,6 +503,47 @@ main .two .two-cart-box .two-cart #TWI-4{
     background-size: cover; 
 }
 
+@media (max-width: 600px) {
+    main .two .two-cart-box {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    main .two .two-cart-box .two-cart .two-cart-img {
+        height: 300px;
+    }
+
+    main .two .two-cart-box .two-cart .two-cart-content {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    main .two .two-cart-box .two-cart .two-cart-content .TW-content-1,
+    main .two .two-cart-box .two-cart .two-cart-content .TW-content-2 {
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    main .two .two-cart-box .two-cart .two-cart-content .TW-content-1 h3 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    main .two .two-cart-box .two-cart .two-cart-content .TW-content-2 p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    main .two .two-cart-box .two-cart .two-cart-content .TW-content-2 button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+
 main .eight{
     width: 100%;
     margin: 80px 0px 20px 0px;
@@ -572,6 +630,56 @@ main .eight .eight-bottom .EB-link li{
 
 }
 
+@media (max-width: 600px) {
+    main .eight {
+        margin: 40px 0px 10px 0px;
+    }
+
+    main .eight .eight-back {
+        height: auto;
+        padding: 40px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    main .eight .eight-back h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    main .eight .eight-back p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    main .eight .eight-back .eight-btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main .eight .eight-back .eight-btn button {
+        font-size: 14px;
+        padding: 12px 15px;
+        width: 100%;
+    }
+
+    main .eight .eight-bottom {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    main .eight .eight-bottom .EB-link {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        border-bottom: none;
+    }
+
+    main .eight .eight-bottom .EB-link li {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
 
 
 footer{

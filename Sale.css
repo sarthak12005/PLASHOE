@@ -530,6 +530,363 @@ main .one .one-title h2{
 
 
 
+main .four{
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .four .four-top{
+    width: 80%;
+    height: 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .four .four-top h3{
+    font-size: 24px;
+    line-height: 29px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: rgb(38, 43, 44);
+}
+
+main .four .four-top .for-tl{
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+main .four .four-top .for-tl a{
+    text-decoration: none;
+    color: rgb(38, 43, 44);
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s linear;
+}
+
+main .four .four-top .for-tl .tl-line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.2s linear;
+}
+
+main .four .four-top .for-tl a:hover{
+    color: red;
+}
+
+main .four .four-top .for-tl a:hover ~ .tl-line{
+    
+    background-color: red;
+}
+
+main .four .four-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+
+
+}
+
+main .four .four-container .con-box{
+    width: 388px ;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .four .four-container .con-box .box-img{
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main .four .four-container .con-box .box-img button{
+    visibility: hidden;
+    width: 100%;
+    padding: 9px;
+    background-color: rgb(122, 122, 122);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+main .four .four-container .con-box .box-img button:hover{
+    background-color: black;
+    color: white;
+}
+
+main .four .four-container .con-box .box-img:hover  button{
+    visibility: visible;
+}
+
+
+main .four .four-container .con-box .box-content{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+main .four .four-container .con-box .box-content h2{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    color: rgb(38, 43, 44);
+}
+
+main .four .four-container .con-box .box-content .amount{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: rgb(151, 154, 155);
+    font-family: Inter, sans-serif;
+}
+
+main .four .four-container .con-box .box-content .star{
+    letter-spacing: 0px;
+    font-weight: 200;
+    color: rgb(151, 154, 155);
+    font-family: Poppins, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    main .four {
+        margin: 30px 0;
+    }
+
+    main .four .four-top {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    main .four .four-top h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    main .four .four-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr; /* One column layout for mobile */
+        gap: 20px;
+    }
+
+    main .four .four-container .con-box {
+        width: 100%;
+        height: auto;
+    }
+
+    main .four .four-container .con-box .box-img {
+        width: 100%;
+        height: 250px; /* Adjusted height */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    /* Make the "Add to Cart" button always visible on mobile */
+    main .four .four-container .con-box .box-img button {
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        padding: 12px;
+        background-color: rgb(122, 122, 122);
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+    }
+
+    main .four .four-container .con-box .box-img button:hover {
+        background-color: black;
+    }
+
+    main .four .four-container .con-box .box-content {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    main .four .four-container .con-box .box-content h2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    main .four .four-container .con-box .box-content .amount {
+        font-size: 14px;
+    }
+
+    main .four .four-container .con-box .box-content .star {
+        font-size: 14px;
+    }
+}
+
+
+main .eight{
+    width: 100%;
+    margin: 80px 0px 20px 0px;
+
+}
+
+main .eight .eight-back{
+    width: 100%;
+    height: 600px;
+    background-image: url("/home.html/os-essets/h-bg-006.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+main .eight .eight-back h2{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 83px;
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+main .eight .eight-back p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    font-family: Inter, sans-serif;
+    color:white ;
+}
+
+main .eight .eight-back .eight-btn{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+main .eight .eight-back .eight-btn button{
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 15px 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+main .eight .eight-back .eight-btn button:hover{
+    background-color: black;
+    color: white;
+}
+
+main .eight .eight-bottom{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .eight .eight-bottom .EB-link{
+    list-style: none;
+    width: 80%;
+    height: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.645);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+main .eight .eight-bottom .EB-link li{
+    padding: 5px 30px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+@media (max-width: 600px) {
+    main .eight {
+        margin: 40px 0px 10px 0px;
+    }
+
+    main .eight .eight-back {
+        height: auto;
+        padding: 40px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    main .eight .eight-back h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    main .eight .eight-back p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    main .eight .eight-back .eight-btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main .eight .eight-back .eight-btn button {
+        font-size: 14px;
+        padding: 12px 15px;
+        width: 100%;
+    }
+
+    main .eight .eight-bottom {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    main .eight .eight-bottom .EB-link {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        border-bottom: none;
+    }
+
+    main .eight .eight-bottom .EB-link li {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+
 
 
 

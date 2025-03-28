@@ -118,7 +118,7 @@ function checkProfileAccess() {
 
     console.log("Access token found:", accessToken);
 
-    // Verify token by fetching the profile
+    
     fetch('http://localhost:5000/api/user/profile', {
         method: 'GET',
         headers: {
@@ -171,9 +171,8 @@ function updateCartTotal() {
     cartTotal.textContent = total.toFixed(2);
 }
 
-// Initialize the page
+
 document.addEventListener('DOMContentLoaded', () => {
-    // fetchProducts();
     updateCartDisplay();
     updateCartCount();
     checkProfileAccess();

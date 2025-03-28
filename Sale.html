@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SS-MEN</title>
+    <title>Plashoe-Sale</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="Men.css">
-<link rel="shortcut icon" href="/home.html/os-essets/site-logo.svg" type="image/x-icon">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-</style>
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Sale.css">
+    <link rel="shortcut icon" href="/home.html/os-essets/site-logo.svg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <!-- jQuery (Required for Toastr) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="head">
@@ -46,11 +54,11 @@
                         </svg></a>
                 </div>
                 <ul class="nav-link-1">
-                    <li><a href="Men.html" id="active-link">MEN</a></li>
+                    <li><a href="Men.html" >MEN</a></li>
                     <li><a href="Women.html">WOMEN</a></li>
-                    <li><a href="collection.html">COLLECTION</a></li>
+                    <li><a href="collection.html" >COLLECTION</a></li>
                     <li><a href="/LookBook.html">LOOKBOOK</a></li>
-                    <li><a href="#">SALE</a></li>
+                    <li><a href="Sale.html" id="active-link">SALE</a></li>
                 </ul>
             </div>
             <div class="nav-second">
@@ -90,96 +98,19 @@
                             <button>Continue Shopping</button>
                         </div>
                     </div>
-                    <a id="profile-btn"><i class="fa-solid fa-user"></i></a>
+                    <a href="/login.html"><i class="fa-solid fa-user"></i></a>
                 </div>
             </div>
         </nav>
     </header>   
 
-
     <main>
         <section class="one">
-             <div class="one-back">
-                <div class="one-head">
-                    <h2>Men</h2>
-                </div>
-                <div class="one-middle">
-                    <div class="OM-1">
-                        <button> Filter Shoes</button>
-                        <p>Showing all 8 results</p>
-                    </div>
-                    <div class="OM-2">
-                        <select name="list-down" id="sorting">
-                            <option >Default sorting</option>
-                            <option value="one1">Sort by popularity</option>
-                            <option value="one2">Sort by average rating</option>
-                            <option value="one3">Sort by latest</option>
-                            <option value="one4">Sort by price: low to high</option>
-                            <option value="one5">Sort by price: high to low</option>
-                        </select>
-                        <button id="sort-block" ><i class="fa-solid fa-grip"></i></button>
-                        <button id="sort-list"><i class="fa-solid fa-list"></i></button>
-                    </div>
-                </div>
-                <div class="one-bottom">
-                    <div class="four-container">
-                    </div>
-                </div>
-             </div>
-             
+            <div class="one-title">
+                <h2>Lookbook</h2>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-top">
-            <div class="footer-top-left">
-                <img src="/home.html/os-essets/site-logo.svg" alt="logo">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem eos earum placeat rerum assumenda illum aperiam amet dolore enim nulla magnam id repudiandae, magni voluptate culpa error corrupti veniam quibusdam! Consequuntur, voluptates?</p>
-                <span>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-pinterest"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </span>
-            </div>
-            <div class="footer-top-right">
-                <div class="footer-right-box">
-                    <h2>Shop</h2>
-                    <ul class="footer-link">
-                        <li>Shop Men</li>
-                        <li>Shop Women</li>
-                        <li>Lookbook</li>
-                        <li>Gift Card</li>
-                        <li>Sale</li>
-                    </ul>
-                </div>
-                <div class="footer-right-box">
-                    <h2>Shop</h2>
-                    <ul class="footer-link">
-                        <li>Shop Men</li>
-                        <li>Shop Women</li>
-                        <li>Lookbook</li>
-                        <li>Gift Card</li>
-                        <li>Sale</li>
-                    </ul>
-                </div>
-                <div class="footer-right-box">
-                    <h2>Shop</h2>
-                    <ul class="footer-link">
-                        <li>Shop Men</li>
-                        <li>Shop Women</li>
-                        <li>Lookbook</li>
-                        <li>Gift Card</li>
-                        <li>Sale</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-down">
-            <p>© 2025 Recycled Shoe Store. Powered by Recycled Shoe Store.</p>
-            <img src="/home.html/os-essets/footer-icons.png" alt="">
-        </div>
-    </footer>
-
-    <script src="Men.js"></script>
 </body>
+
 </html>

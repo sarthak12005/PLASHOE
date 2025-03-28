@@ -174,7 +174,7 @@ function updateCartDisplay() {
     }
 
     cartNote.style.display = 'none';
-    viewCart.style.display = 'block';
+    viewCart.style.display = 'flex';
 
     // Remove existing cart items before adding new ones
     const cartItems = cartContainer.querySelectorAll('.cart-item');

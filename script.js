@@ -100,7 +100,7 @@ async function fetchProducts() {
         }
 
         const products = await response.json();
-        console.log(products);  // Check the products in the console
+        // console.log(products);  // Check the products in the console
         displayProducts(".four-container", "#second-forth", products); // Call display function
     } catch (error) {
         console.log("The error is:", error);
@@ -156,16 +156,17 @@ function updateCartDisplay() {
     const cart = getCart();
     const cartNote = document.getElementById('Cart-note');
     const cartContainer = document.querySelector('.cart-two');
+    const viewCart = document.querySelector('.ViewCart');
 
     // Check if elements exist to avoid null errors
-    if (!cartNote || !cartContainer) {
+    if (!cartNote || !cartContainer || !viewCart) {
         console.warn("Cart elements not found in the DOM!");
         return;
     }
 
     if (cart.length === 0) {
         cartNote.style.display = 'block';
-
+        viewCart.style.display = 'none';
         // Remove only cart items without clearing #Cart-note
         const cartItems = cartContainer.querySelectorAll('.cart-item');
         cartItems.forEach(item => item.remove());
@@ -173,6 +174,7 @@ function updateCartDisplay() {
     }
 
     cartNote.style.display = 'none';
+    viewCart.style.display = 'block';
 
     // Remove existing cart items before adding new ones
     const cartItems = cartContainer.querySelectorAll('.cart-item');

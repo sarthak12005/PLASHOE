@@ -527,6 +527,108 @@ main .one .one-title h2{
 }
 
 
+main .two {
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+main .two .T-box1,main .two .T-box2 {
+    width: 50%;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main .two .T-box1 h3,main .two .T-box2 h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: white;
+}
+
+main .two .T-box1 h2,main .two .T-box2 h2 {
+    font-size: 48px;
+    line-height: 62px;
+    color: white;
+}
+
+main .two .T-box1 button,main .two .T-box2 button{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 18px 45px;
+    /* color: rgb(38, 43, 44); */
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+
+main .two .T-box1 button:hover,main .two .T-box2 button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* main .two .T-box2 {
+    width: 50%;
+    height: 400px;
+    background-color: red;
+} */
+
+main .two .T-box1 {
+    background-image: url('/home.html/os-essets/Sale-bg-001.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .two .T-box2 {
+    background-image: url('/home.html/os-essets/Sale-bg-002.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+    main .two {
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    main .two .T-box1, 
+    main .two .T-box2 {
+        width: 100%;
+        height: 300px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    main .two .T-box1 h3, 
+    main .two .T-box2 h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    main .two .T-box1 h2, 
+    main .two .T-box2 h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    main .two .T-box1 button, 
+    main .two .T-box2 button {
+        font-size: 12px;
+        padding: 12px 30px;
+    }
+}
+
 
 
 

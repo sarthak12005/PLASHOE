@@ -28,6 +28,7 @@ body::-webkit-scrollbar{
 header{
     width: 100%;
     box-sizing: border-box;
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,6 +185,10 @@ header nav .nav-second .nav-icon .side-cart{
     z-index: 10;
 
     transition: all 0.75s ease;
+}
+
+#cart-box:checked ~ .side-cart{
+    right: 0px;
 }
 
 header nav .nav-second .nav-icon .side-cart .cart-one{
@@ -421,9 +426,7 @@ header nav .nav-second .nav-icon .side-cart .cart-three button:hover{
     background-color: black;
 }
 
-#cart-box:checked ~ .side-cart{
-    right: 0px;
-}
+
 
 
 

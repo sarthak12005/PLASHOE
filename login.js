@@ -35,7 +35,7 @@ async function submitData() {
             // console.log("Refresh Token Saved:", localStorage.getItem('refreshToken'));
 
             // Redirect to index page
-            window.location.href = '/home/index.html';
+            window.location.href = 'index.html';
         } else {
             // alert('Login failed: No access token received');
             toastr.error("Login Failed! Please try again");

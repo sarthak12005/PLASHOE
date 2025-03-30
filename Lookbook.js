@@ -119,7 +119,7 @@ function checkProfileAccess() {
     console.log("Access token found:", accessToken);
 
     // Verify token by fetching the profile
-    fetch('http://localhost:5000/api/user/profile', {
+    fetch('https://plashoe-0ysc.onrender.com/api/user/profile', {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${accessToken}`

@@ -35,7 +35,7 @@ header{
 
 header .head{
     width: 100%;
-    background-color: #F1F1EF;
+    /* background-color: #F1F1EF; */
     height: 40px;
     display: flex;
     align-items: center;

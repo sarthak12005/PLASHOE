@@ -31,6 +31,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 header .head{
@@ -398,6 +399,9 @@ header nav .nav-second .nav-icon .side-cart .cart-three button:hover{
 
 
 @media screen and (max-width:600px){
+    header {
+        overflow-x: hidden;
+    }
     header nav{
         margin: 0px;
 

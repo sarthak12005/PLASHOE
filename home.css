@@ -29,11 +29,10 @@ body::-webkit-scrollbar {
 header {
     width: 100vw;
     box-sizing: border-box;
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 header .head {

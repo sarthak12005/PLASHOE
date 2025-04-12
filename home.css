@@ -533,6 +533,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 
@@ -571,6 +572,7 @@ main .one .one-back-img .one-container {
 
 main .one .one-back-img .one-container .con-text {
     width: 100%;
+
 
 }
 

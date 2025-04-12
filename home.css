@@ -442,6 +442,7 @@ header nav .nav-second .nav-icon .side-cart .cart-three button:hover {
 
     header {
         overflow-x: hidden;
+        border: 2px solid red;
     }
 
     header nav {

@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     /* border: 2px solid red; */
     display: flex;
